@@ -112,15 +112,14 @@ if st.session_state["authentication_status"]:
     col3.text_area('Texto final', respuesta, height=400)
     #put a copy button
     col3.button('Copiar', help='Copia el texto final al portapapeles')
-    
+
     st.write('---')
     st.write('---')
     col1, col2, col3 = st.columns([2, 1, 2])
     
     col1.write('VERSION 0.01')
     col1.write('Jaime Vélez, 2023')
-    if col3.button('Download log', help='descaargar el log'):
-        st.download_button(label='Download log', data='log.txt', file_name='log.txt', mime='text/plain')
+    st.download_button(label='Download log', data='log.txt', file_name='log.txt', mime='text/plain')
 
 
 elif st.session_state["authentication_status"] == False:
