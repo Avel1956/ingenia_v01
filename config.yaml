@@ -1,0 +1,33 @@
+credentials:
+  usernames:
+    jaime:
+      email: javelezea@gmail.com
+      name: Jaime
+      password: '$2b$12$zMFHsVD3mtB.lEHbpk9GBuK7NpO30Xg7rsrGIDIKxLqbKzqg3raLa' #To be replaced with hashed password
+    Natalia:
+      email: ngaviria@udea.edu.co
+      name: Natalia
+      password: '$2b$12$RnByIJ6JGlV81UT7lWuyueDs4Yhcq2b8WRO4Use1oVQzwTNAsZ20W' # To be replaced with hashed password
+    Vivi:
+      email: viviana.posadap@udea.edu.co 
+      name: Viviana
+      password: '$2b$12$92t3vMw7VQIVcS7sRA2R.uJTsdODcsbgqyJ790NHbpL0SvigYdmAq' # To be replaced with hashed password
+    Gabriel:
+      email: tecnoarteuno@gmail.com  
+      name: Gabriel
+      password: '$2b$12$nI3DZ0ckIB/a45hQ./Zo8.irnUm4Zom32l6rq/qcp4f0dQ0a0Wnbe' # To be replaced with hashed password
+    Rigel:
+      email: rigelliste@gmail.com  
+      name: Rigel
+      password: '$2b$12$DUywZ1jL4e9blNPbdxaJJuVmkaxNdoL0AvlsFpc4NoA0RtK/FVay2' # To be replaced with hashed password
+    Alejandro:
+      email: alejandro.velezz@udea.edu.co  
+      name: Alejandro
+      password: '$2b$12$lUpFFBHncjn9ejk13cxBquYRXLlbRX1PfkuqNsaHoRViqnRmgZdmS' # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: lqXZgzvFSZ38zKLEkFlBLpvlusTeJAD2
+  name: streamlitauth
+preauthorized:
+  emails:
+  - javelezea@gmail.com
