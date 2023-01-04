@@ -24,9 +24,10 @@ authenticator = Authenticate(
 )
 
 name, authentication_status, username = authenticator.login('Login', 'main')
+st.session_state['authentication_status'] = authentication_status
 if st.session_state["authentication_status"]:
     
-        #controles del modelo de lenguaje
+       
         
 
         
