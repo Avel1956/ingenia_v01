@@ -32,7 +32,7 @@ if st.session_state["authentication_status"]:
         
     authenticator.logout('Logout', 'main')
     
-    st.write(f'Welcome *{st.session_state["name"]}*')
+    st.write(f'Hola *{st.session_state["name"]}*')
     #divide screen in tree columns, one narrowest and two wider
     col1, col2, col3 = st.columns([2, 1, 2])
         
