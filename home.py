@@ -119,7 +119,7 @@ if st.session_state["authentication_status"]:
     
     col1.write('VERSION 0.01')
     col1.write('Jaime Vélez, 2023')
-    st.download_button(label='Download log', data='log.txt', file_name='log.txt', mime='text/plain')
+    #st.download_button(label='Download log', data='log.txt', file_name='log.txt', mime='text/plain')
 
 
 elif st.session_state["authentication_status"] == False:
@@ -132,7 +132,7 @@ import datetime
 now = datetime.datetime.now()
 with open('log.txt', 'a') as f:
     f.write(f'{now} {st.session_state["name"]} {st.session_state["authentication_status"]}')
-
+ 
 
 
 
