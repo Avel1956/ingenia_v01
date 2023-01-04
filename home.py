@@ -29,7 +29,7 @@ if st.session_state["authentication_status"]:
     # Titulo green color
     st.markdown(f'<style>div.row-widget.stMarkdown > div{{color: #00FF00;}}</style>', unsafe_allow_html=True)
     st.title('IngenIA')
-    
+    st.write('---')
   
     
        
@@ -39,6 +39,10 @@ if st.session_state["authentication_status"]:
     authenticator.logout('Logout', 'main')
     
     st.write(f'Hola *{st.session_state["name"]}*')
+    st.write('Bienvenid@ a IngenIA, el asistente de IA de la Facultad de Ingeniería de la Universidad de Antioquia')
+    st.write('Esta es un prueba de concepto de un asistente de IA que puede ayudar a docentes y estudiantes de la facultad a realizar\
+         tareas de análisis, creación y síntesis de contenidos textuales. Las operacciones mostradas en este prototipo aún no están\
+            completamente desarrolladas y pueden presentar errores. Por favor, no utilice este asistente para tareas críticas.')
     #divide screen in tree columns, one narrowest and two wider
     col1, col2, col3 = st.columns([2, 1, 2])
         
@@ -46,7 +50,7 @@ if st.session_state["authentication_status"]:
     col1.header('Entrada')
     
     #save text in a variable
-    text_ini = col1.text_area('Texto inicial', height=400)
+    text_ini = col1.text_area('Texto inicial', height=400, help='Ingrese el texto que desea analizar')
     # Save the text in the session state
     st.session_state["text_ini"] = text_ini
 
@@ -116,7 +120,7 @@ if st.session_state["authentication_status"]:
     #write variable to text area
     col3.text_area('Texto final', respuesta, height=400)
     #put a copy button
-    col3.button('Copiar', help='Copia el texto final al portapapeles')
+    
 
     st.write('---')
     st.write('---')
