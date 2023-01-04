@@ -103,7 +103,7 @@ if st.session_state["authentication_status"]:
         # Log the message
         logging.info(log_message)
 
-    col2.image('resources\Arrows_blue.png', width=100)
+    #col2.image('resources\Arrows_blue.png', width=100)
     #col3
     col3.header('Salida')
     
