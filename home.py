@@ -41,8 +41,8 @@ if st.session_state["authentication_status"]:
     st.write(f'Hola *{st.session_state["name"]}*')
     st.write('Bienvenid@ a IngenIA, el asistente de IA de la Facultad de Ingeniería de la Universidad de Antioquia')
     st.write('Esta es un prueba de concepto de un asistente de IA que puede ayudar a docentes y estudiantes de la facultad a realizar\
-         tareas de análisis, creación y síntesis de contenidos textuales. Las operacciones mostradas en este prototipo aún no están\
-            completamente desarrolladas y pueden presentar errores. Por favor, no utilice este asistente para tareas críticas.')
+         tareas de análisis, creación y síntesis de contenidos textuales. Las operaciones mostradas en este prototipo aún no están\
+            completamente afinadas y pueden presentar errores. Por favor, no utilice este asistente para tareas críticas.')
     #divide screen in tree columns, one narrowest and two wider
     col1, col2, col3 = st.columns([2, 1, 2])
         
