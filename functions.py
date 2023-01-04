@@ -51,7 +51,7 @@ resumen = Metodo(
         post_prompt = 'summary= "',
         model = "text-davinci-003",
         temperatura = 0,
-        max_tokens = 1000,
+        max_tokens = 200,
         top_p = 1.0,
         frequency_penalty = 0.0,
         presence_penalty = 0.0

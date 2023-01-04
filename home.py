@@ -26,7 +26,12 @@ authenticator = Authenticate(
 name, authentication_status, username = authenticator.login('Login', 'main')
 st.session_state['authentication_status'] = authentication_status
 if st.session_state["authentication_status"]:
+    # Titulo green color
+    st.markdown(f'<style>div.row-widget.stMarkdown > div{{color: #00FF00;}}</style>', unsafe_allow_html=True)
     st.title('IngenIA')
+    
+  
+    
        
         
 
@@ -49,7 +54,7 @@ if st.session_state["authentication_status"]:
     tokens = len(text_ini.split())
     col1.write(f'Número de tokens: {tokens}')
     # change middle column color
-    col2.markdown(f'<style>div.row-widget.stRadio > div{{background-color: #F5F5F5;}}</style>', unsafe_allow_html=True)
+    col2.markdown(f'<style>div.row-widget.stRadio > div{{background-color: #B9E0E1;}}</style>', unsafe_allow_html=True)
     
     #col2
     col2.header('Operaciones')
