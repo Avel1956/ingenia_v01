@@ -48,7 +48,7 @@ extraccion_relaciones = Metodo(
     )
 resumen = Metodo(
         pre_prompt = 'A summary of the following text:\n\n"',
-        post_prompt = 'summary= "',
+        post_prompt = 'TL;DR: ',
         model = "text-davinci-003",
         temperatura = 0,
         max_tokens = 200,
