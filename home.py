@@ -37,7 +37,8 @@ if st.session_state["authentication_status"]:
 
         
     authenticator.logout('Logout', 'main')
-    
+    #color of the text
+    st.markdown(f'<style>div.row-widget.stMarkdown > div{{color: #000000;}}</style>', unsafe_allow_html=True)
     st.write(f'Hola *{st.session_state["name"]}*')
     st.write('Bienvenid@ a IngenIA, el asistente de IA de la Facultad de Ingeniería de la Universidad de Antioquia')
     st.write('Esta es un prueba de concepto de un asistente de IA que puede ayudar a docentes y estudiantes de la facultad a realizar\
